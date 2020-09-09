@@ -1,25 +1,25 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 a {
   color: #fff;
-  text-decoration: none;
   cursor: pointer;
+  text-decoration: none;
 }
 html,
 body {
   color: #fff;
   margin: 0px;
   padding: 0px;
-  font-size: 0.9375vw;
+  font-size: 0.89285714vw;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
   background-color: #181818;
 }
 .contentWrapper {
   width: 100vw;
-  padding: 0 8.37053571vw;
   margin: 0 auto;
+  padding: 0 8.37053571vw;
 }

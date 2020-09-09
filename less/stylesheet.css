@@ -1,40 +1,41 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 a {
   color: #fff;
-  text-decoration: none;
   cursor: pointer;
+  text-decoration: none;
 }
 html,
 body {
   color: #fff;
   margin: 0px;
   padding: 0px;
-  font-size: 0.9375vw;
+  font-size: 0.89285714vw;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
   background-color: #181818;
 }
 .contentWrapper {
   width: 100vw;
-  padding: 0 8.37053571vw;
   margin: 0 auto;
+  padding: 0 8.37053571vw;
 }
 header {
-  position: fixed;
-  height: 9.02777778VW;
-  line-height: 9.02777778VW;
   width: 100vw;
+  height: 8.37053571vw;
   z-index: 2;
+  position: fixed;
+  font-size: 1.00446429vw;
+  line-height: 8.37053571vw;
   perspective: 100px;
 }
 header .logo {
-  font-size: 0.97222222VW;
-  font-weight: 700;
   float: left;
+  font-size: 1.00446429vw;
+  font-weight: 700;
 }
 header .location {
   float: left;
@@ -45,8 +46,29 @@ header .links {
   float: right;
 }
 header .links a {
-  padding: 0px 50px;
+  padding: 0px 2.79017857vw;
 }
-header .links a:nth-child(3) {
-  padding: 0px 0px 0px 50px;
+header .links a:nth-child(2) {
+  padding: 0px 0px 0px 2.79017857vw;
+}
+@media (max-width: 1200px) {
+  header {
+    height: 80px;
+    font-size: 12px;
+    line-height: 80px;
+  }
+  header .logo {
+    font-size: 12px;
+  }
+}
+@media all and (max-width: 1200px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1200px) {
+  .contentWrapper {
+    padding: 0px 20px;
+  }
 }
