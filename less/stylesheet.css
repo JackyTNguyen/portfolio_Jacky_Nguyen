@@ -59,6 +59,31 @@ header .links a {
 header .links a:nth-child(2) {
   padding: 0px 0px 0px 2.79017857vw;
 }
+.pageContainer {
+  position: relative;
+  z-index: 1;
+  padding-top: 8.37053571vw;
+  overflow: hidden;
+  width: 100vw;
+}
+.pageContainer .introBlock {
+  width: 100%;
+  perspective: 100px;
+  margin: 0px auto;
+}
+.pageContainer .introBlock .introHeader {
+  padding: 25px 0px;
+  text-align: center;
+}
+.pageContainer .introBlock .introHeader .mediumTitle {
+  font-size: 16px;
+}
+.pageContainer .introBlock canvas {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  object-fit: contain;
+}
 @media (max-width: 1200px) {
   header {
     height: 80px;
