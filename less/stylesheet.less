@@ -35,11 +35,11 @@ html, body {
 
 header {
     width: 100vw;
-    height: 8.370535714285714vw;
+    height: 6.975446428571429vw;
     z-index: 2;
     position: fixed;
     font-size: 1.0044642857142858vw;
-    line-height: 8.370535714285714vw;
+    line-height: 6.975446428571429vw;
     perspective: 100px;
     .logo {
         float: left;
@@ -65,37 +65,110 @@ header {
 .pageContainer {
     position: relative;
     z-index: 1;
-    padding-top: 8.370535714285714vw;
+    padding-top: 6.975446428571429vw;
     overflow: hidden;
     width: 100vw;
     .introBlock {
         width: 100%;
         perspective: 100px;
         margin: 0px auto;
-        .introHeader {
-            padding: 25px 0px;
-            text-align: center;
-            .mediumTitle {
-                font-size: 16px;
+        .introWrapper {
+            .introHeader {
+                text-align: center;
+                .mediumTitle {
+                    font-size: 16px;
+                }
             }
-        }
-        canvas {
-            width: 100%;
-            position: relative;
-            z-index: 2;
-            object-fit: contain;
+            .imageWrapper {
+                margin-top: 2.778vw;
+                height: 0;
+                padding-top: 56.06%;
+                width: 100%;
+                position: relative;
+                overflow: hidden;
+                box-sizing: border-box;
+                .imageWrapperAnim {
+                    height: 100%;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    display: block;
+                    .innerImage {
+                        height: 120%;
+                        left: -10%;
+                        position: absolute;
+                        top: -10%;
+                        width: 120%;
+                        box-sizing: border-box;
+                        background: #fff;
+                        background-size: cover;
+                        background-position: center center;
+                    }
+                }
+            }
+            .introFooter {
+                text-align: center;
+                .smallTitle {
+                    font-size: 12px;
+                    padding: 0px 0px 20px 0px;
+                }
+                .scroll-down4{  
+                    width: 1px;
+                    height: 25px;
+                    background: #ffffff;
+                    animation: scrollDown4 2s ease infinite;
+                    margin: 0 auto;
+                }
+            }   
+            @keyframes scrollDown4{
+                0%{
+                    transform-origin: top;
+                    transform: scaleY(0);
+                }
+                45%{
+                    transform-origin: top;
+                    transform: scaleY(1);
+                }
+                55%{
+                    transform-origin: bottom;
+                    transform: scaleY(1);
+                }
+                100%{
+                    transform-origin: bottom;
+                    transform: scaleY(0);
+                }
+            }            
         }
     }
 }
 
+.pageContainer {
+    .contentWrapper {
+        .imageWrapper {
+            margin-top: 2.778vw;
+            height: 0;
+            padding-top: 56.06%;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+    }
+    
+}
+
 @media (max-width: 1200px) {
     header {
-        height:80px;
+        height: 80px;
         font-size: 12px;
-        line-height:80px;
+        line-height: 80px;
         .logo {
             font-size: 12px;
         }
+    }
+    .pageContainer {
+        padding: 80px 0px 0px 0px;
     }
 }
 
